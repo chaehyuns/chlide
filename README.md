@@ -1,34 +1,3 @@
-
-### 프로젝트 시연
-
-https://github.com/user-attachments/assets/5886b700-6308-4bb5-87b3-053d162185c3
-
-### state를 활용하여 loading, error 등의 상태를 관리
-
-- 공통 컴포넌트(ui/component): ErrorScreen, LoadingScreen으로 다양한 상태 대응.
-  에러 발생 시, 재시도 버튼으로 사용자 편의성 향상.
-- 네트워크 장애 발생 시 재시도 버튼을 통해 이미지를 다시 불러올 수 있도록 구현
-- 네트워크 에러나 구성 변경 시에도 ViewModel에 저장된 imageId를 통해 복구 가능.
-
-https://github.com/user-attachments/assets/c2a770c3-8b64-4589-b624-e0f85116e960
-
-<img width="210" alt="Image" src="https://github.com/user-attachments/assets/56078a93-9750-4bf6-89f4-848fce9c41ec" />
-<img width="210" alt="Image" src="https://github.com/user-attachments/assets/f9862692-6135-42d7-ba34-01e15b926af5" />
-
-### 가로모드 및 다크모드 지원
-
-https://github.com/user-attachments/assets/afc8d0cd-9b3d-433d-942c-47be103d1b1f
-
-https://github.com/user-attachments/assets/45bd48b0-22d0-493e-ac9a-ed4e27c35463
-
-### 주요 라이브러리
-
-- Hilt: 의존성 관리를 자동화 및 간단한 어노테이션(@Inject, @HiltViewModel)으로 DI 구성
-- Retrofit: API 요청 및 응답 처리를 간단하고 안정적으로 구현
-- Kotlin Serialization: Kotlin 특화 빠르고 간편한 JSON 직렬화/역직렬화 지원
-- Paging3: 대규모 데이터셋(이미지 리스트)을 효율적으로 로드 및 표시
-- Navigation: Compose 환경에서 화면 전환을 선언적으로 구성
-
 ## 자체 이미지 라이브러리, Childe 🌉
 
 ### Childe 라이브러리
@@ -203,6 +172,25 @@ fun ImageExample() {
     ├── HttpConnection.kt             // HTTP 연결 생성 유틸리티 클래스
     └── Ratio.kt                      // 비율 계산을 돕는 확장 함수
 ```
+
+
+### state를 활용하여 loading, error 등의 상태를 관리
+
+- 공통 컴포넌트(ui/component): ErrorScreen, LoadingScreen으로 다양한 상태 대응.
+  에러 발생 시, 재시도 버튼으로 사용자 편의성 향상.
+- 네트워크 장애 발생 시 재시도 버튼을 통해 이미지를 다시 불러올 수 있도록 구현
+- 네트워크 에러나 구성 변경 시에도 ViewModel에 저장된 imageId를 통해 복구 가능.
+
+
+### 가로모드 및 다크모드 지원
+
+### 주요 라이브러리
+
+- Hilt: 의존성 관리를 자동화 및 간단한 어노테이션(@Inject, @HiltViewModel)으로 DI 구성
+- Retrofit: API 요청 및 응답 처리를 간단하고 안정적으로 구현
+- Kotlin Serialization: Kotlin 특화 빠르고 간편한 JSON 직렬화/역직렬화 지원
+- Paging3: 대규모 데이터셋(이미지 리스트)을 효율적으로 로드 및 표시
+- Navigation: Compose 환경에서 화면 전환을 선언적으로 구성
 
 ### 참고: 프로파일러
 
