@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">당근 갤러리</string>
+    <string name="gallery_profile">프로필</string>
+    <string name="gallery_my_carrot">나의 당근</string>
+    <string name="gallery_image">갤러리</string>
+    <string name="retry">재시도</string>
+    <string name="gallery_empty_content">갤러리가 비었습니다.</string>
+    <string name="error_image_load">이미지 불러오기를 실패했습니다.</string>
+    <string name="close">닫기</string>
+</resources>
